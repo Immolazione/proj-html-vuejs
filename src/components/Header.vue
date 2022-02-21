@@ -3,7 +3,7 @@
   <section class="header-bg position-relative">
     <HeaderNavigation />
     <HeaderJumbotron />
-    <img src="../assets/img/Wave-1.png" alt="wave">
+    <img src="../assets/img/Wave-1.png" class="w-100" alt="wave">
   </section>
 </section>
 </template>
