@@ -54,7 +54,7 @@ export default {
       background-color: $bg-color-yellow;
       color: $text-color-white1;
       border: none;
-      padding: 1rem;
+      padding: 1rem 2rem;
       border-radius: 50px;
     }
   }
