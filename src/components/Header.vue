@@ -1,8 +1,9 @@
 <template>
 <section class="header-layer">
-  <section class="header-bg">
-  <HeaderNavigation />
-  <HeaderJumbotron />
+  <section class="header-bg position-relative">
+    <HeaderNavigation />
+    <HeaderJumbotron />
+    <img src="../assets/img/Wave-1.png" alt="wave">
   </section>
 </section>
 </template>
@@ -25,16 +26,20 @@ export default {
 
   .header-layer{
     background-color: $bg-color-red1;
-    height: 700px;
+    height: 800px;
     .header-bg {
+      // opacity: 0.1;
       height: 100%;
-      opacity: 0.1;
       // filter: grayscale(100%); PROB BUONA PROPRIETà
-      background-color: $bg-color-red1;
-      background-image: url(../assets/img/theme_slider2_bg-1.jpg);
+      // background-color: $bg-color-red1;
+      // background-image: url(../assets/img/theme_slider2_bg-1.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      img {
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
 </style>
