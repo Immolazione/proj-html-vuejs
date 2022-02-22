@@ -5,7 +5,7 @@
             <div class="col-6 d-flex flex-column">
                 <img src="../assets/img/Books-icon.png" alt="books_icon">
                 <h1>Thousands of courses for any type of student</h1>
-                <p>At EduPrima, it doesn't matter what domain you wish to purse a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.</p>
+                <p>At EduPrime, it doesn't matter what domain you wish to purse a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.</p>
                 <button>Browse throught courses</button>
             </div>
             <div class="col-4 offset-1 d-flex align-items-center justify-content-center"><img src="../assets/img/Graduation-Illustration.png"></div>
@@ -25,7 +25,7 @@ export default {
 @import '../assets/scss/style.scss';
 
 section {
-    height: 700px;
+    height: 600px;
     .container{
         position: relative;
         z-index: 1;
