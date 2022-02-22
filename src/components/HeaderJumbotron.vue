@@ -1,7 +1,7 @@
 <template>
 <section id="header-jumbotron" class="position-relative">
   <div class="d-flex flex-column align-items-center container">
-    <h1>Key to your success</h1>
+    <h1 class="text-center">Key to your success</h1>
     <p class="text-center">EduPrime is the most versitile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.</p>
     <div>
       <button class="me-5 search-courses">Search Courses</button>
@@ -9,9 +9,9 @@
     </div>
   </div>
   <ul id="header-bookmarks" class="list-group position-absolute">
-    <li class="list-group-item">a</li>
-    <li class="list-group-item">a</li>
-    <li class="list-group-item">a</li>
+    <li class="list-group-item"></li>
+    <li class="list-group-item"></li>
+    <li class="list-group-item"></li>
   </ul>
 </section>
 </template>
@@ -44,7 +44,7 @@ export default {
     padding: 2rem
   }
   .container {
-    width: 40%;
+    width: 50%;
 
     h1 {
       color: $text-color-white1;

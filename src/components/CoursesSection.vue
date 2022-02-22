@@ -3,10 +3,10 @@
     <div class="container">
         <div class="row">
             <div class="col-6 d-flex flex-column">
-                <img src="../assets/img/Books-icon.png" alt="books_icon">
-                <h1>Thousands of courses for any type of student</h1>
-                <p>At EduPrime, it doesn't matter what domain you wish to purse a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.</p>
-                <button>Browse throught courses</button>
+                <img class="mb-4" src="../assets/img/Books-icon.png" alt="books_icon">
+                <h1 class="mb-4">Thousands of courses for any type of student</h1>
+                <p class="mb-5">At EduPrime, it doesn't matter what domain you wish to purse a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.</p>
+                <button class="button">Browse throught courses</button>
             </div>
             <div class="col-4 offset-1 d-flex align-items-center justify-content-center"><img src="../assets/img/Graduation-Illustration.png"></div>
         </div>
@@ -53,7 +53,7 @@ section {
         border: none;
         padding: 1rem 2rem;
         border-radius: 50px;
-        width: 40%;
+        width: 50%;
     }
 }
 .col-4{
@@ -62,5 +62,8 @@ section {
     }
 }
 
+.button:hover{
+    background-color: $bg-color-red1;
+}
 
 </style>

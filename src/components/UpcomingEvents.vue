@@ -6,37 +6,26 @@
       <p class="text-center">A single university with a load of courses, tailored to satisfy any student's needs.</p>
     </div>
     <div id="event-card" class="mt-5 container d-flex justify-content-between">
-        <div class="event-card d-flex flex-column align-items-center justify-content-center position-relative pb-2">
-            <h2>Coaching Session</h2>
-            <p class="text-muted text-center">24 Mar 18:00 PM</p>
-            <p class="text-muted w-75 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing [...]</p>
-            <button class="position-absolute">Find More</button>
-        </div>
-        <div class="event-card d-flex flex-column align-items-center justify-content-center position-relative pb-2">
-            <h2>Coaching Session</h2>
-            <p class="text-muted text-center">24 Mar 18:00 PM</p>
-            <p class="text-muted w-75 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing [...]</p>
-            <button class="position-absolute">Find More</button>
-        </div>
-        <div class="event-card d-flex flex-column align-items-center justify-content-center position-relative pb-2">
-            <h2>Coaching Session</h2>
-            <p class="text-muted text-center">24 Mar 18:00 PM</p>
-            <p class="text-muted w-75 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing [...]</p>
+        <div
+        v-for="(item, index) in coachingSessions"
+        :key="index" 
+        class="event-card d-flex flex-column align-items-center justify-content-center position-relative pb-2">
+            <h2>{{ item.title }}</h2>
+            <p class="text-muted text-center">{{ item.date }}</p>
+            <p class="text-muted w-75 text-center">{{ item.description }}</p>
             <button class="position-absolute">Find More</button>
         </div>
     </div>
     <div class="other-courses-btn d-flex justify-content-center">
-    <button>View All Events</button>
-    </div>
-    <div class="position-absolute">
-        <svg class="w-100" id="svg_modeltheme_logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 114.02"><defs><style>.cls-1{fill:#69de89}</style></defs><path class="cls-1" d="M62.54 23.14v2.78H51.71a25.62 25.62 0 00-25.6 25.6v30.25h-5.89A20.28 20.28 0 010 61.55V20.22A20.28 20.28 0 0120.22 0h41.33a20.08 20.08 0 0113.81 5.49 18.59 18.59 0 00-12.82 17.65z"/><path d="M111.51 104.3a19.62 19.62 0 01-16.9 9.7h-42.9a19.66 19.66 0 01-19.6-19.6V51.52a19.66 19.66 0 0119.6-19.6h10.83v25.56A18.59 18.59 0 0081.1 76h26.19c-.18 1.84-.27 3.72-.27 5.61a58.85 58.85 0 004.49 22.69z" fill="#fff"/><path class="cls-1" d="M128 23.14v13.57a56.76 56.76 0 00-13.79 16.65 57.85 57.85 0 00-6 16.68H81.1a12.59 12.59 0 01-12.56-12.56V23.14A12.6 12.6 0 0181.1 10.58h34.34A12.6 12.6 0 01128 23.14z"/></svg>
+    <button class="button">View All Events</button>
     </div>
 </section>
 </template>
 
 <script>
 export default {
-    name: 'UpcomingEvents'
+    name: 'UpcomingEvents',
+    props: ['coachingSessions']
 }
 </script>
 
@@ -69,7 +58,7 @@ section > .other-courses-btn button {
     margin-top: 4rem;
     padding: 1.5rem 2.5rem;
     border-radius: 50px;
-    width: 10%;
+    width: 15%;
 }
 #event-card{
     button{
@@ -84,5 +73,8 @@ section > .other-courses-btn button {
         border-radius: 30px;
         box-shadow: 0 0 5px 0 $border-color-grey4;
     }
+}
+.button:hover{
+    background-color: $bg-color-red2;
 }
 </style>

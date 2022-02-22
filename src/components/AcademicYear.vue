@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <UpcomingEvents />
+    <UpcomingEvents :coachingSessions="coachingSessions" />
 </section>
 </template>
 
@@ -33,7 +33,8 @@ export default {
     name: 'AcademicYear',
     components: {
         UpcomingEvents
-    }
+    },
+    props: ['coachingSessions']
 }
 </script>
 

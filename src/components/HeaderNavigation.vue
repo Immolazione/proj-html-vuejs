@@ -3,13 +3,12 @@
   <img src="../assets/img/theme_eduprime_logo.png" alt="Header_Logo">
   <div class="d-flex align-items-center">
     <ul class="d-flex align-items-center">
-      <li><a href="#">Home</a><span>&#x25BE;</span></li>
-      <li><a href="#">Courses</a><span>&#x25BE;</span></li>
-      <li><a href="#">About Us</a><span>&#x25BE;</span></li>
-      <li><a href="#">News</a><span>&#x25BE;</span></li>
-      <li><a href="#">Pages</a><span>&#x25BE;</span></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Purchase</a></li>
+      <li class="nav-item" v-for="(item, index) in navbar" :key="index">
+        <a class="nav-item" href="#">{{ item.name }}
+          <span class="ms-1 nav-item" v-if="item.arrow">&#x25BE;</span>
+        </a>
+      </li>
+
     </ul>
     <button type="button">VIEW COURSES</button>
   </div>
@@ -20,6 +19,7 @@
 
 export default {
   name: 'HeaderNavigation',
+  props: ['navbar']
 }
 </script>
 
@@ -39,6 +39,9 @@ export default {
       li {
         list-style-type: none;
         padding: 0 1.5rem;
+        .nav-item:hover {
+          color: $text-color-yellow;
+        }   
         a {
           font-family: $itim;
           text-decoration: none;
@@ -57,7 +60,11 @@ export default {
       padding: 1rem 2rem;
       border-radius: 50px;
     }
+    button:hover{
+      background-color: $bg-color-white1;
+      color: $text-color-red;
+    }
   }
-  
 }
+
 </style>

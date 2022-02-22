@@ -1,8 +1,8 @@
 <template>
   <section class="position-relative">
     <div id="faculties-title" class="container d-flex flex-column justify-content-center align-items-center">
-      <h1>Faculties available at EduPrime</h1>
-      <p class="text-center">A single university with a load of courses, tailored to satisfy any student's needs.</p>
+      <h1 class="mb-3">Faculties available at EduPrime</h1>
+      <p class="text-center mb-4">A single university with a load of courses, tailored to satisfy any student's needs.</p>
     </div>
     <div id="faculties-tab">
         <div class="container d-flex">
@@ -39,8 +39,8 @@
           <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="law-faculty">
         </div>
         <div class="col-5">
-          <h1>Law Faculty</h1>
-          <p>Learning from world-leading academics and practitioners, you'll not only receive an outstanding groundind in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions</p>
+          <h1 class="mb-4">Law Faculty</h1>
+          <p class="mb-4">Learning from world-leading academics and practitioners, you'll not only receive an outstanding groundind in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions</p>
           <button>Read More</button>
         </div>
       </div>
@@ -91,10 +91,12 @@ section > .position-absolute {
   border-right: 1px solid $border-color-grey4;
   img{
     height: 60%;
+    margin-bottom: 1rem;
   }
   h3 {
     font-family: $itim;
     color: $text-color-red;
+    font-size: 1rem;
   }
 }
 #faculties-tab-description {
